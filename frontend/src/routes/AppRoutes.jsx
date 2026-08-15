@@ -13,6 +13,8 @@ import Payroll from '../pages/Payroll';
 import LeaveManagement from '../pages/LeaveManagement';
 import Departments from '../pages/Departments';
 import Reports from '../pages/Reports';
+import UserManagement from '../pages/UserManagement';
+import AuditLogs from '../pages/AuditLogs';
 import Settings from '../pages/Settings';
 
 import { ROUTES } from '../constants/routes';
@@ -34,7 +36,7 @@ const AppRoutes = () => {
 
       {/* Protected Dashboard Routes */}
       <Route element={<ProtectedRoute />}>
-        <Route element={<MainLayout title="Payroll Management" />}>
+        <Route element={<MainLayout title="Enterprise Payroll & HRMS" />}>
           <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
           <Route path={ROUTES.EMPLOYEES} element={<Employees />} />
           <Route path={ROUTES.ATTENDANCE} element={<Attendance />} />
@@ -42,6 +44,8 @@ const AppRoutes = () => {
           <Route path={ROUTES.LEAVE} element={<LeaveManagement />} />
           <Route path={ROUTES.DEPARTMENTS} element={<Departments />} />
           <Route path={ROUTES.REPORTS} element={<Reports />} />
+          <Route path={ROUTES.USER_MANAGEMENT} element={<UserManagement />} />
+          <Route path={ROUTES.AUDIT_LOGS} element={<AuditLogs />} />
           <Route path={ROUTES.SETTINGS} element={<Settings />} />
         </Route>
       </Route>

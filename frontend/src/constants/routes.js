@@ -13,5 +13,7 @@ export const ROUTES = {
   LEAVE: '/leave',
   DEPARTMENTS: '/departments',
   REPORTS: '/reports',
+  USER_MANAGEMENT: '/user-management',
+  AUDIT_LOGS: '/audit-logs',
   SETTINGS: '/settings',
 };
