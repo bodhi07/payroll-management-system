@@ -1,0 +1,56 @@
+# ==========================================
+# Global / Root Ignore Rules
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+.factorypath
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# Backend (Spring Boot / Maven / Java)
+# ==========================================
+backend/target/
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/logs/
+backend/*.log
+backend/bin/
+backend/.apt_generated
+backend/.apt_generated_tests
+
+# ==========================================
+# Frontend (React / Vite / Node.js)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.cache/
+frontend/*.local
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.eslintcache
+frontend/.stylelintcache
